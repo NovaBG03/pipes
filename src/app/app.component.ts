@@ -33,6 +33,8 @@ export class AppComponent {
     }
   ];
 
+  filterInput = '';
+
   getStatusClasses(server: {instanceType: string, name: string, status: string, started: Date}) {
     return {
       'list-group-item-success': server.status === 'stable',
